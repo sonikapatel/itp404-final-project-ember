@@ -1,7 +1,6 @@
 # Itp404-final-project-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The LA restaurant finder will display the best of the best restaurants within a 25 mile radius of the Los Angeles area. It will include the Yelp API and a database I have curated over 2 years of living in downtown. Users could add recommendations/food suggestions for specific restaurants based on their experiences.
 
 ## Prerequisites
 
