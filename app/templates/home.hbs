@@ -1,0 +1,92 @@
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+<style>
+
+body {
+		background-image: url("assets/food.jpg");
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		font-family: "Avenir";
+
+}
+#firstpanel{
+	
+	font-family: "Avenir";
+	height:auto;
+	text-align:center;
+	margin:auto;
+	padding: 30px;
+	margin-top: 12%;
+	height: 300%;
+	width: 100%;
+	color: white;
+
+
+}
+#front{
+	font-size: 50px;	
+	text-align:center;
+	margin:auto;
+	font-family: "Avenir";
+	padding: 20px;
+
+}
+
+#text{
+	font-size:32px;
+
+}
+
+.search {
+	opacity: 0.5;
+ 	color: black;
+ 	text-align: center;
+ 	line-height: 18px;
+ 	border-radius: 20px;
+ 	outline: none;
+ 	font-size: 18pt;
+}
+
+
+#submit {
+	border-radius: 20px;
+	width: 80px;
+	height: 100px;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+</style>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Restaurant Journey</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="/search">Search</a></li>
+      <li><a href="/restaurant">My Restaurants</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div id="firstpanel">
+<div id = "front" ><strong>Welcome to Restaurant Journey! </strong>
+<br>
+</div>
+<div id="text">
+To get started, search for foods near you.
+<br>Or, add reviews for your favorite restaurants.
+</div>
+<br>
+<button style= "border:none; background-color:darkgrey; height: 40px; padding:7px; font-size:17px; opacity: 0.70;  border-radius: 7px;"class= 'submit' type='submit' id='submit'> <a href="/search"> <strong>Search</strong></a> </button> 
+<button  style="border:none; padding:7px; font-size:17px; opacity: 0.64;  border-radius: 7px;"> <a class= 'favs' href="/restaurant"> <strong> Favorites</strong></a> </button> 
+<br>
+
+</div>
+</body>

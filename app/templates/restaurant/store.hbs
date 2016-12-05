@@ -1,0 +1,48 @@
+
+
+<div style="text-align:center;  padding:20px;  background-color:lightsteelblue; font-size:16px; padding-left:70px; font-family: 'Avenir';"> 
+This restaurant, 
+{{model.data.restaurantName}}'s 
+cuisine is 
+{{#if model.data.cuisine}}
+{{model.data.cuisine}}
+{{else}}
+not listed
+{{/if}}
+and has
+{{#if model.data.stars}}
+{{model.data.stars}} stars.
+{{else}}
+no stars.
+{{/if}}
+<br>
+<br>
+{{#if model.data.reviews}}
+I reviewed "{{model.data.reviews}}"
+{{else}}
+No reviews listed.
+{{/if}}
+</div>
+
+
+{{outlet}}
+
+<form onsubmit= {{action 'addRestaurant'}} style="text-align:center; margin-top:40px;margin-left:30px; padding-bottom:30px; font-family:'Avenir';">
+<strong>Restaurant Name: </strong> {{input type="text" value=restaurantName}}
+<br>
+<br>
+<strong>Cuisine: </strong>{{input type= "text" value= cuisine}}
+<br>
+<br>
+I give it {{input type="text"  value=stars}} stars. 
+<br>
+<br>
+My Review {{textarea value =review}}
+<br>
+<br>
+<button type="submit"> Add Restaurant </button>
+</form>
+
+
+
+

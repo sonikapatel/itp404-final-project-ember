@@ -7,9 +7,16 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('restaurant');
-  this.route('location');
-  this.route('reviews');
+  this.route('home');
+  this.route('search', function() {
+    this.route('results', {path: '/:term'});
+    this.route({path: '/:term/'}, {path: '/:location'});
+    });
+this.route('restaurant', function() {
+    this.route('store', { path: ':id'});
+  });
 });
 
+
 export default Router;
+ 
